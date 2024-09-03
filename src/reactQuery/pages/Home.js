@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div>
       home page
+      <p>change text in home page</p>
     </div>
   )
 }

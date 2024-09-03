@@ -16,6 +16,7 @@ import RQusers from "./reactQuery/pages/RQusers";
 
 import { QueryClientProvider, QueryClient  } from 'react-query';
 import { ReactQueryDevtools} from 'react-query/devtools'
+import Heading from './components/heading/Heading';
 
 //import ParentContext from "./components/useContext/ParentContext";
 
@@ -28,40 +29,40 @@ import { ReactQueryDevtools} from 'react-query/devtools'
 const queryClient = new QueryClient()
 
 function App() {
+  
 
+  // return (
+  //   <QueryClientProvider client={queryClient} >
 
-  return (
-    <QueryClientProvider client={queryClient} >
-
-    <div 
-    //className="App"
-    >
-      {/* <h1>App JS Heading</h1> */}
-      {/* <Parent /> */}
-      {/* <ParentOne>
-        <ChildOne />
-      </ParentOne> */}
-      {/* <GrandParent /> */}
-      {/* <ParentThree /> */}
-      {/* <ContextParent /> */}
-      {/* <ParentComponent /> */}
-      {/* <CountMemo /> */}
-      {/* <ParentContext /> */}
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="users" element={<Users />} />
-        <Route path="RQusers" element={<RQusers />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="login" element={<Login />} />
-      </Routes>
+  //   <div>
+  //     {/* <h1>App JS Heading</h1> */}
+  //     {/* <Parent /> */}
+  //     {/* <ParentOne>
+  //       <ChildOne />
+  //     </ParentOne> */}
+  //     {/* <GrandParent /> */}
+  //     {/* <ParentThree /> */}
+  //     {/* <ContextParent /> */}
+  //     {/* <ParentComponent /> */}
+  //     {/* <CountMemo /> */}
+  //     {/* <ParentContext /> */}
+  //     {/* <NavBar />
+  //     <Routes>
+  //       <Route path="/" element={<Home />} />
+  //       <Route path="users" element={<Users />} />
+  //       <Route path="RQusers" element={<RQusers />} />
+  //       <Route path="profile" element={<Profile />} />
+  //       <Route path="login" element={<Login />} />
+  //     </Routes> */}
       
-      <h1>React Query</h1>
+  //     {/* <h1>React Query</h1> */}
 
-    </div>
-      <ReactQueryDevtools initialIsOpen={false} position='botton-right' />
-      </QueryClientProvider>
-  );
+  //   </div>
+  //     <ReactQueryDevtools initialIsOpen={false} position='botton-right' />
+  //     </QueryClientProvider>
+  // );
+
+  return <Heading />
 }
 
 export default App;
